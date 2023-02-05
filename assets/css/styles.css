@@ -173,7 +173,7 @@ a {
     border-radius: 12px;
 }
 
-.Clients .images a:hover{
+.Clients .images a:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -609,7 +609,6 @@ a {
 }
 
 .footer .social-link {
-    /* margin-left: 16px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -618,6 +617,10 @@ a {
     background: #f9f9f9;
     border-radius: 3px;
 }
+
+.footer .social-link + .social-link{
+    margin-left: 16px;
+}   
 
 .footer .social-link:hover {
     background: #ebebeb;
@@ -632,6 +635,6 @@ a {
 
 .footer .copyright {
     font-weight: 400;
-    font-size: 1.4re;
+    font-size: 1.4rem;
     color: #c2c2c2;
 }
