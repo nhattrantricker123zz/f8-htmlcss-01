@@ -45,8 +45,18 @@ a {
     overflow: hidden;
 }
 /* ==========header========== */
-.header {
+.fixed-header {
     background: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
+.hero-wrap {
+    background: #e6f0ff;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     position: relative;
 }
@@ -54,7 +64,7 @@ a {
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 
 .navbar ul {
@@ -618,9 +628,9 @@ a {
     border-radius: 3px;
 }
 
-.footer .social-link + .social-link{
+.footer .social-link + .social-link {
     margin-left: 16px;
-}   
+}
 
 .footer .social-link:hover {
     background: #ebebeb;
