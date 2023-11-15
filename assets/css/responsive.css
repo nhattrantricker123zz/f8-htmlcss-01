@@ -1,0 +1,215 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .header-mobile {
+        display: none;
+    }
+    .toggle-menu {
+        display: none;
+    }
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991px) {
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .navbar ul {
+        display: none;
+    }
+    .toggle-menu svg {
+        width: 24px;
+        color: #666;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5 ease;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+    .menu-drawer {
+        padding: 40px;
+        position: fixed;
+        inset: 0 40% 0 0;
+        background-color: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+    .menu-drawer ul a {
+        display: block;
+        padding: 14px 0;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .separate {
+        border-top: 1.5px solid #ebebeb;
+    }
+
+    .hero-img {
+        display: none;
+    }
+    .hero-wrap .info {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero-wrap .desc {
+        width: 80%;
+        margin: 30px auto auto;
+    }
+
+    .Clients .images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .guide-item {
+        margin: 0;
+        flex: 1;
+    }
+    .featured .list {
+        grid-template-columns: 1fr 1fr;
+    }
+    .stats .img-block,
+    .stats .info {
+        width: 100%;
+    }
+    .img-block {
+        order: 2;
+        margin-top: 58px;
+    }
+    .stats .row {
+        flex-direction: column;
+    }
+    .stats .info {
+        padding: 22px;
+        order: 1;
+    }
+    .stats .sub-title {
+        width: 70%;
+    }
+    .stats .info .desc {
+        width: 100%;
+    }
+    .row-qty {
+        flex-direction: row;
+    }
+    .stats .qty {
+        font-size: 5.2rem;
+    }
+    .qty-desc {
+        font-size: 1.6rem;
+    }
+    .subscription .image {
+        display: none;
+    }
+    .footer .row-top {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        row-gap: 80px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .menu-drawer {
+        inset: 0 25% 0 0;
+        padding: 40px;
+    }
+    .navbar .actions {
+        display: none;
+    }
+    .hero-wrap .desc {
+        width: 100%;
+    }
+    .Clients .images {
+        row-gap: 20px;
+    }
+    .list-guide {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+    .guide-cta {
+        margin-top: 60px;
+    }
+    .featured .link {
+        display: none;
+    }
+    .featured .list {
+        grid-template-columns: 1fr;
+    }
+    .featured .view-all {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .stats .sub-title {
+        width: 100%;
+    }
+    .stats-trend {
+        left: 20px;
+    }
+ 
+    .stats .row-qty{
+        row-gap: 50px;
+        text-align: center;
+    }
+    .subscription .info{
+        padding: 32px;
+    }
+    .subscription .body{
+        height: auto;
+    }
+    .footer .row-top{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer{
+        margin-top: 0;
+    }
+    .footer .row-bottom{
+        row-gap: 20px;
+        flex-direction: column;
+        align-items: start  ;
+    }
+}
